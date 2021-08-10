@@ -1,0 +1,40 @@
+body {
+  background-color: black;
+  color: green;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+
+  a {
+    &:link,
+    &:visited,
+    &:hover,
+    &:active {
+      color: green;
+      text-decoration: none;
+    }
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.home__container {
+  width: 100%;
+
+  .nav__container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-end;
+
+    .nav__item {
+      padding: 8px;
+      font-size: 1.2rem;
+    }
+
+    .nav__logo {
+      margin-right: 10px;
+    }
+  }
+}
