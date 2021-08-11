@@ -1,11 +1,11 @@
-<div class="card" id="apod">
-    <div class="card-header text-center font-size-8">
+<div class="card" style="width: fit-content; margin: auto; max-width: 600px;" id="apod">
+    <div class="card-header text-center">
         <div class="" id="apod_title-left">{{ __('apod.apod_title') }}</div>
         <div class="fs-5 fst-italic" id="apod_title-right"></div>
     </div>
-    <a href="" id="apod_image_link" target="_blank">
+    <a href="" id="apod_image_link" style="margin: auto;" target="_blank">
         <img src="{{ asset('assets/images/misc/loading.gif') }}" class="card-img-top p-2" id="apod_image"
-            alt="Astronomy picture of the day" style="max-width: 600px; height: auto;">
+            alt="Astronomy picture of the day" style="height: auto;">
         <iframe width="420" height="315" class="card-img-top p-2" id="apod_video" style="display:none;" src=""></iframe>
     </a>
     <div class="text-center"><span class="fst-italic" id="apod_info"></span>

@@ -7,5 +7,19 @@
 // Bootstrap
 @import "~bootstrap/scss/bootstrap";
 
+// Theme color
+$background-color: black;
+$text-color: green;
+$rg-main-color: green;
+
 // Service
 @import "service";
+
+// Common
+@import "common";
+
+// Navigation
+@import "navigation";
+
+// Contactme
+@import "contactme";

@@ -8,4 +8,5 @@
     <meta name="robots" content="index,follow" />
     <title>{{ config('app.name', 'Laravel') }}</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">
+    <script src="https://www.google.com/recaptcha/api.js"></script>
 </head>

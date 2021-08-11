@@ -10909,3 +10909,25 @@ textarea.form-control-lg {
   font-size: 1.5rem;
   color: #888;
 }
+
+.rg-text-color {
+  color: green !important;
+}
+
+.rg-background-color {
+  background-color: black;
+}
+
+.rg-nav {
+  color: green !important;
+  background-color: black;
+  border-bottom-width: 1px;
+  border-bottom-color: green;
+  border-bottom-style: solid;
+}
+
+.contact-form {
+  border-width: 1px;
+  border-color: green;
+  border-style: solid;
+}

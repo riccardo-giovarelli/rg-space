@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'Agency Super Hero'),
+    'name' => env('APP_NAME', 'RG-Space'),
 
     /*
     |--------------------------------------------------------------------------
@@ -22,7 +22,7 @@ return [
     |
     */
 
-    'keywords' => env('APP_NAME', 'Agenzia,Immobiliare,Agency,Super,Hero'),
+    'keywords' => env('APP_NAME', 'Riccardo,Giovarelli'),
 
     /*
     |--------------------------------------------------------------------------

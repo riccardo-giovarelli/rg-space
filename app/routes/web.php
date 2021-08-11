@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Artisan;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\ContactController;
 
 
 /////////////////
@@ -19,10 +20,21 @@ require __DIR__ . '/auth.php';
 Route::get('/wrong-way', function () {
     return view('service.onlyric');
 })->name('onlyric');
+
 // Home
 Route::get('/', function () {
     return view('home.index');
 })->name('home');
+
+// About me
+Route::get('/about-me', function () {
+    return view('aboutme.aboutme');
+})->name('aboutme');
+
+// Contact me
+Route::get('/contact', [ContactController::class, 'contactShow'])->name('contactme');
+Route::post('/contact', [ContactController::class, 'contactPost']);
+
 // Apod
 Route::get('/home/getApod', [HomeController::class, 'getApod']);
 
