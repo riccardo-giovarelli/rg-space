@@ -3,7 +3,7 @@ $(function () {
     if ($("#apod").length) {
         $.ajax({
             type: "GET",
-            url: "/get-apod",
+            url: $("#apod").data("route"),
             success: function (result) {
                 const apod_info = [];
                 if (result.date) apod_info.push(result.date);

@@ -36,7 +36,7 @@ Route::get('/contact', [ContactController::class, 'contactShow'])->name('contact
 Route::post('/contact', [ContactController::class, 'contactPost']);
 
 // Apod
-Route::get('/get-apod', [HomeController::class, 'getApod']);
+Route::get('/get-apod', [HomeController::class, 'getApod'])->name('getapod');
 
 
 ////////////////

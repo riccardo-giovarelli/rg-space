@@ -10910,6 +10910,11 @@ textarea.form-control-lg {
   color: #888;
 }
 
+body {
+  font-family: "Nunito", sans-serif;
+  font-size: 14px;
+}
+
 .rg-text-color {
   color: green !important;
 }
@@ -10924,10 +10929,52 @@ textarea.form-control-lg {
   border-bottom-width: 1px;
   border-bottom-color: green;
   border-bottom-style: solid;
+  font-size: 1.2rem;
+}
+
+.hb-menu {
+  font-size: 2.5rem;
 }
 
 .contact-form {
   border-width: 1px;
   border-color: green;
   border-style: solid;
+}
+
+.contact-form-input {
+  background-color: black;
+  color: green;
+  border: 1px solid green;
+}
+.contact-form-input:focus {
+  background-color: black;
+}
+
+.apod__container {
+  color: green;
+  border-style: solid;
+  border-color: green;
+  border-width: 1px;
+  margin: auto;
+  max-width: 800px;
+}
+.apod__container .apod__header .apod__title-left {
+  border-bottom-style: solid;
+  border-bottom-color: green;
+  border-bottom-width: 1px;
+}
+.apod__container .apod__image-link {
+  margin: auto;
+}
+.apod__container .apod__image-link .apod__image {
+  height: auto;
+}
+.apod__container .apod__image-link .apod__iframe {
+  display: none;
+}
+.apod__container .apod__explanation-container {
+  border-top-style: solid;
+  border-top-color: green;
+  border-top-width: 1px;
 }

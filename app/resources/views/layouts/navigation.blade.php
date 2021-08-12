@@ -7,7 +7,9 @@
         <button class="navbar-toggler rg-text-color" type="button" data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
             aria-label="Toggle navigation">
-            Menu
+            <span class="material-icons hb-menu">
+                menu
+            </span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -18,7 +20,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="rg-text-color nav-link" href="https://www.rgspace.it/blog/">
+                    <a target="_self" class="rg-text-color nav-link" href="https://www.rgspace.it/blog/">
                         {{ __('navigation.app_navigation_blog') }}
                     </a>
                 </li>

@@ -3,3 +3,13 @@
     border-color: $rg-main-color;
     border-style: solid;
 }
+
+.contact-form-input {
+    background-color: $background-color;
+    color: $text-color;
+    border: 1px solid $rg-main-color;
+
+    &:focus {
+        background-color: $background-color;
+    }
+}

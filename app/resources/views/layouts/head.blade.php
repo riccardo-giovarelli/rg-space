@@ -7,6 +7,7 @@
     <meta name="copyright" content="Riccardo Giovarelli" />
     <meta name="robots" content="index,follow" />
     <title>{{ config('app.name', 'Laravel') }}</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="https://www.google.com/recaptcha/api.js"></script>
 </head>

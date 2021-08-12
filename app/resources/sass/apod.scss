@@ -1,0 +1,36 @@
+.apod__container {
+    color: $text-color;
+
+    border-style: solid;
+    border-color: $rg-main-color;
+    border-width: 1px;
+
+    margin: auto;
+    max-width: 800px;
+
+    .apod__header {
+        .apod__title-left {
+            border-bottom-style: solid;
+            border-bottom-color: $rg-main-color;
+            border-bottom-width: 1px;
+        }
+    }
+
+    .apod__image-link {
+        margin: auto;
+
+        .apod__image {
+            height: auto;
+        }
+
+        .apod__iframe {
+            display: none;
+        }
+    }
+
+    .apod__explanation-container {
+        border-top-style: solid;
+        border-top-color: $rg-main-color;
+        border-top-width: 1px;
+    }
+}
