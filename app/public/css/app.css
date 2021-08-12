@@ -10941,14 +10941,32 @@ body {
   border-color: green;
   border-style: solid;
 }
-
-.contact-form-input {
+.contact-form ::-moz-placeholder {
+  color: green;
+  opacity: 1;
+}
+.contact-form :-ms-input-placeholder {
+  color: green;
+  opacity: 1;
+}
+.contact-form ::placeholder {
+  color: green;
+  opacity: 1;
+}
+.contact-form :-ms-input-placeholder {
+  color: green;
+}
+.contact-form ::-ms-input-placeholder {
+  color: green;
+}
+.contact-form .contact-form-input {
   background-color: black;
   color: green;
   border: 1px solid green;
 }
-.contact-form-input:focus {
+.contact-form .contact-form-input:focus {
   background-color: black;
+  color: green;
 }
 
 .apod__container {
