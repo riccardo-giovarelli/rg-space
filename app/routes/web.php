@@ -36,17 +36,12 @@ Route::get('/contact', [ContactController::class, 'contactShow'])->name('contact
 Route::post('/contact', [ContactController::class, 'contactPost']);
 
 // Apod
-Route::get('/home/getApod', [HomeController::class, 'getApod']);
+Route::get('/getApod', [HomeController::class, 'getApod']);
 
 
 ////////////////
 // Ric Routes //
 ////////////////
-
-// Root Panel
-Route::get('/boss', function () {
-    return view('boss.index');
-})->middleware(['ric'])->name('boss');
 
 // Artisan
 Route::get('/boss/clear-cache', function () {

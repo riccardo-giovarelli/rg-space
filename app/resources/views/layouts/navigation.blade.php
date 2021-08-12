@@ -1,32 +1,38 @@
-<nav class="container-fluid p-3 rg-nav">
-    <div class="row align-items-center">
+<nav class="navbar navbar-expand-lg navbar-light rg-nav">
+    <div class="container-fluid">
         <!-- Logo -->
         <a class="col-auto navbar-brand" href="{{ route('home') }}">
             <x-application-logo :width="50" :height="50" />
         </a>
-        <!-- Navigation Links -->
-        <div class="col-auto d-none d-lg-block">
-            <ul class="nav nav-pills">
+        <button class="navbar-toggler rg-text-color" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            Menu
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <x-nav-link :href="route('home')" :active="request()->routeIs('home')" class="rg-text-color">
+                    <a class="rg-text-color {{ request()->routeIs('home') ? 'nav-link disabled text-decoration-underline' : 'nav-link' }}"
+                        href="{{ route('home') }}">
                         {{ __('navigation.app_navigation_home') }}
-                    </x-nav-link>
+                    </a>
                 </li>
                 <li class="nav-item">
-                    <x-nav-link href="https://www.rgspace.it/blog/" :active="false" class="rg-text-color">
+                    <a class="rg-text-color nav-link" href="https://www.rgspace.it/blog/">
                         {{ __('navigation.app_navigation_blog') }}
-                    </x-nav-link>
+                    </a>
                 </li>
                 <li class="nav-item">
-                    <x-nav-link :href="route('aboutme')" :active="request()->routeIs('aboutme')" class="rg-text-color">
+                    <a class="rg-text-color {{ request()->routeIs('aboutme') ? 'nav-link disabled text-decoration-underline' : 'nav-link' }}"
+                        href="{{ route('aboutme') }}">
                         {{ __('navigation.app_navigation_aboutme') }}
-                    </x-nav-link>
+                    </a>
                 </li>
                 <li class="nav-item">
-                    <x-nav-link :href="route('contactme')" :active="request()->routeIs('contactme')"
-                        class="rg-text-color">
+                    <a class="rg-text-color {{ request()->routeIs('contactme') ? 'nav-link disabled text-decoration-underline' : 'nav-link' }}"
+                        href="{{ route('contactme') }}">
                         {{ __('navigation.app_navigation_contactme') }}
-                    </x-nav-link>
+                    </a>
                 </li>
             </ul>
         </div>
