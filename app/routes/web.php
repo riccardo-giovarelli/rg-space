@@ -31,6 +31,11 @@ Route::get('/about-me', function () {
     return view('aboutme.aboutme');
 })->name('aboutme');
 
+//Privacy
+Route::get('/privacy', function () {
+    return view('privacy.index');
+})->name('privacy');
+
 // Contact me
 Route::get('/contact', [ContactController::class, 'contactShow'])->name('contactme');
 Route::post('/contact', [ContactController::class, 'contactPost']);

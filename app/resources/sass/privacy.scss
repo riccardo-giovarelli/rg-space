@@ -1,0 +1,19 @@
+.privacy-text {
+    border-width: 1px;
+    border-color: $rg-main-color;
+    border-style: solid;
+    border-radius: 10px;
+
+    box-shadow: 10px 10px 5px $rg-main-color;
+
+    color: $text-color;
+
+    a {
+        &:link,
+        &:visited,
+        &:hover,
+        &:active {
+            color: $text-color;
+        }
+    }
+}

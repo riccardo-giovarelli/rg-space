@@ -36,6 +36,12 @@
                         {{ __('navigation.app_navigation_contactme') }}
                     </a>
                 </li>
+                <li class="nav-item">
+                    <a class="rg-text-color {{ request()->routeIs('privacy') ? 'nav-link disabled text-decoration-underline' : 'nav-link' }}"
+                        href="{{ route('privacy') }}">
+                        {{ __('navigation.app_navigation_privacy') }}
+                    </a>
+                </li>
             </ul>
         </div>
     </div>
