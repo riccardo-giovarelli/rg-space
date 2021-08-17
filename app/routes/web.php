@@ -43,6 +43,9 @@ Route::post('/contact', [ContactController::class, 'contactPost']);
 // Apod
 Route::get('/get-apod', [HomeController::class, 'getApod'])->name('getapod');
 
+// Language
+Route::get('lang/{lang}', ['as' => 'lang.switch', 'uses' => 'App\Http\Controllers\LanguageController@switchLang']);
+
 
 ////////////////
 // Ric Routes //

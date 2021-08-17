@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-light rg-nav">
+<nav class="navbar navbar-expand-lg navbar-light rg-nav ">
     <div class="container-fluid">
         <!-- Logo -->
         <a class="col-auto navbar-brand" href="{{ route('home') }}">
@@ -41,6 +41,19 @@
                         href="{{ route('privacy') }}">
                         {{ __('navigation.app_navigation_privacy') }}
                     </a>
+                </li>
+            </ul>
+            <ul class="navbar-nav mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                    <a class="rg-text-color nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                        aria-expanded="false">{{ config('languages.dictionaries')[App::getLocale()] }}</a>
+                    <ul class="dropdown-menu">
+                        @foreach (config('languages.dictionaries') as $lang => $dictionary)
+                            <li><a class="dropdown-item"
+                                    href="{{ route('lang.switch', $lang) }}">{{ $dictionary }}</a>
+                            </li>
+                        @endforeach
+                    </ul>
                 </li>
             </ul>
         </div>

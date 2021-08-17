@@ -4,9 +4,9 @@
         <h3 class="apod__title-right mt-3 fs-3 text-center" id="apod_title-right"></h3>
     </div>
     <a class="apod__image-link" href="" id="apod_image_link" target="_blank">
-        <img src="{{ asset('assets/images/misc/loading.gif') }}" class="apod__image card-img-top p-2" id="apod_image"
+        <img class="apod__image card-img-top p-2" id="apod_image" src="{{ asset('assets/images/misc/loading.gif') }}"
             alt="Astronomy picture of the day">
-        <iframe width="420" height="315" class="apod__iframe card-img-top p-2" id="apod_video" src=""></iframe>
+        <iframe class="apod__iframe card-img-top p-2" id="apod_video" src=""></iframe>
     </a>
     <div class="apod__info-container text-center">
         <span class="apod__info fst-italic" id="apod_info"></span>

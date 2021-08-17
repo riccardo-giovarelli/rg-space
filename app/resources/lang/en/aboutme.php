@@ -2,7 +2,7 @@
 
 return [
     'aboutme_title' => 'About me',
-    'aboutme_text' => 'I\'m Riccardo Giovarelli and I live in Bologna, Italy. I love to code, write and learn all I can. I work in a software company where I\'m in touch with a lot of interesting technologies.',
+    'aboutme_text' => 'My name is Riccardo Giovarelli and I live in Sala Bolognese, Italy. Before settling here, I also lived in Bologna, Rome, Perugia and Gubbio, where I was born. I currently work in a software company where I am in touch with a lot of interesting technologies. I love to code, write and always learn new things in every discipline.',
     'contactme_text' => 'If you want to contact me, use the',
     'contactme_button' => 'form',
 ];
