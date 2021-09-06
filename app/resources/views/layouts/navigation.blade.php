@@ -20,11 +20,6 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a target="_self" class="rg-text-color nav-link" href="https://www.rgspace.it/blog/">
-                        {{ __('navigation.app_navigation_blog') }}
-                    </a>
-                </li>
-                <li class="nav-item">
                     <a class="rg-text-color {{ request()->routeIs('aboutme') ? 'nav-link disabled text-decoration-underline' : 'nav-link' }}"
                         href="{{ route('aboutme') }}">
                         {{ __('navigation.app_navigation_aboutme') }}
